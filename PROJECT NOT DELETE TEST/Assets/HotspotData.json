@@ -1,0 +1,16 @@
+{
+    "name": "Gabinete A1.73",
+
+    "images": [   {
+
+        "materialName": "GS14",
+        "mapping": [{
+            "uuidsensor" : "asçf",
+            "type": "text",
+            "information": "Temperature:",
+            "positionX": 3.079, 
+            "positionY": -0.599,
+            "positionZ": 2.977
+        }   ]
+    }]
+}   
