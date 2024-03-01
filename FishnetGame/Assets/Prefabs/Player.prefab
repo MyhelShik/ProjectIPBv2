@@ -208,6 +208,8 @@ GameObject:
   - component: {fileID: 4044964720114728737}
   - component: {fileID: 4044821374862924687}
   - component: {fileID: 26232862201630843}
+  - component: {fileID: 6615129178494629057}
+  - component: {fileID: 97540065140978580}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -290,6 +292,8 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   _networkBehaviours:
   - {fileID: 4044964720114728737}
+  - {fileID: 26232862201630843}
+  - {fileID: 6615129178494629057}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   SerializedTransformProperties:
@@ -301,9 +305,9 @@ MonoBehaviour:
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 0
+  <PrefabId>k__BackingField: 6
   <SpawnableCollectionId>k__BackingField: 0
-  _scenePathHash: 584410112
+  _scenePathHash: 0
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 7807759643866311769
 --- !u!114 &26232862201630843
@@ -318,9 +322,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 4044821374862924687}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 4044821374862924687}
   _componentConfiguration: 0
   _synchronizeParent: 0
   _packing:
@@ -351,3 +355,35 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &6615129178494629057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026606661554082067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e7f45861ac62144b5342f317a5e0cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 2
+  _addedNetworkObject: {fileID: 4044821374862924687}
+  _networkObjectCache: {fileID: 4044821374862924687}
+  body: {fileID: 1787435437116526458}
+  endColor: {r: 0.8679245, g: 0.79887724, b: 0.10153075, a: 0}
+--- !u!114 &97540065140978580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026606661554082067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c71fd7f855ec523429999fc4e14a1928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _overrideType: 3
+  _updateHostVisibility: 1
+  _observerConditions: []
