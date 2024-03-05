@@ -20,9 +20,9 @@ public class PlayerSpawnObject : NetworkBehaviour
         {
             SpawnObject(objToSpawn, transform, this);        
         }
-        if(spawnedObject == null && Input.GetKeyDown(KeyCode.Alpha2))
+        if(spawnedObject != null && Input.GetKeyDown(KeyCode.Alpha2))
         {
-
+            DespawnObject(spawnedObject);
         }
     }
 
@@ -38,6 +38,12 @@ public class PlayerSpawnObject : NetworkBehaviour
 
     public void SetSpawnedObject(GameObject spawned, PlayerSpawnObject script)
     {
-        script.SetSpawnedObject = spawned;
+        script.spawnedObject = spawned;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DespawnObject(GameObject obj)
+    {
+        ServerManager.Despawn(obj);
     }
 }

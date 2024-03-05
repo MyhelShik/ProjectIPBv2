@@ -400,3 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4729c72ccf1f54419a6b1dea04decf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentIndexCache: 255
+  _addedNetworkObject: {fileID: 4044821374862924687}
+  _networkObjectCache: {fileID: 0}
+  objToSpawn: {fileID: 6559910506559784259, guid: 1272e8032a0150742aa8c77097a6bdf4, type: 3}
+  spawnedObject: {fileID: 0}
