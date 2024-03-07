@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FishNet.Object;
 
-public class MeshDestroy : MonoBehaviour
+public class MeshDestroy : NetworkBehaviour
 {
     private bool edgeSet = false;
     private Vector3 edgeVertex = Vector3.zero;

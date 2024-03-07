@@ -10,7 +10,7 @@ public class PlayerHealth : NetworkBehaviour
     public override void OnStartClient()
     {
         base.OnStartClient();
-        if(base.IsOwner)
+        if(!base.IsOwner)
             GetComponent<PlayerHealth>().enabled = false;
     }
 
@@ -18,7 +18,7 @@ public class PlayerHealth : NetworkBehaviour
     {
         if(Input .GetKeyDown(KeyCode.R))
         {
-
+            UpdateHealth(this, -1);
         }
     }
 
