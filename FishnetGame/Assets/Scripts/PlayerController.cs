@@ -38,7 +38,7 @@ public class PlayerController : NetworkBehaviour
         }
         else
         {
-            gameObject.GetComponent<PlayerController>().enabled = false;
+            gameObject.GetComponent<AutoHandPlayer>().enabled = false;
         }
     }
 
